@@ -1,0 +1,4 @@
+CompileFlags:
+  Add:
+    - "--include-directory=kernel/src"
+    - "--include-directory=kernel/src/include"

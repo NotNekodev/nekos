@@ -1,0 +1,23 @@
+#ifndef __SERIAL_H
+#define __SERIAL_H
+
+#include <stdint.h>
+
+#include <arch/x86_64/io.h>
+
+#define COM1 0x3F8
+#define COM2 0x2F8
+#define COM3 0x3E8
+#define COM4 0x2E8
+#define COM5 0x5F8
+#define COM6 0x4F8
+#define COM7 0x5E8
+#define COM8 0x4E8
+
+void outc_com1(char c);
+void outc(uint16_t port, char c);
+
+void outstr(uint16_t port, const char *message);
+int init_serial(uint16_t port);
+
+#endif // __SERIAL_H

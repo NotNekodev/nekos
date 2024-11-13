@@ -1,0 +1,6 @@
+{
+    "clangd.fallbackFlags": [
+        "-I${workspaceFolder}/kernel/src/",
+        "-I${workspaceFolder}/kernel/src/include/"
+    ]
+}
